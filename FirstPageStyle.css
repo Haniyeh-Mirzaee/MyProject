@@ -15,12 +15,11 @@ body {
 /* header */
 
 .header{
-    border: solid 1px white;
     background-color: white;
     width: 360px;
-    height: 101px;
     position: relative;
     margin: auto;
+    padding-bottom: 10px;
 }
 
 .topheadcontetnt{
@@ -104,13 +103,12 @@ body {
 /* body */
 
 .mainbody{
-    border: solid 1px white;
     background-color: white;
     width: 360px;
-    height: 604px;
     margin: auto;
     margin-top: 10px;
     position: relative;
+    padding-bottom: 10px;
 }
 
 .list_titr{
@@ -380,6 +378,8 @@ body {
 }
 
 .hoora_msg{
+    position: relative; 
+    z-index: 1;
     font-size: 12px;
     color: #00786C;
     padding: 5px;
@@ -388,6 +388,30 @@ body {
     background-color: #DFF5F1;
     margin-top: 5px;
     margin-right: 12px;
+}
+
+.hoora_msg2{
+    position: relative; 
+    z-index: 1;
+    font-size: 12px;
+    color: #00786C;
+    padding: 5px;
+    width: 90%;
+    border-radius: 2px;
+    background-color: #EEEEEE;
+    margin-top: 5px;
+    margin-right: 12px;
+}
+
+.green-bg{
+    background-color:#DFF5F1; 
+    width: 68%; 
+    height: 100%; 
+    position: absolute; 
+    top: 0px; 
+    right: 0px; 
+    bottom: 0px; 
+    z-index: -1;
 }
 
 
@@ -462,24 +486,32 @@ body {
 }
 
 /* body2 */
+
 .mainbody2{
-        border: solid 1px white;
         background-color: white;
         width: 360px;
-        height: 376px;
-        margin-top: 20px;
+        margin-top: 30px;
         position: relative;
+        margin: auto;
+        padding-bottom: 10px;
+}
+
+.body2{
+    margin-top: 10px;
 }
 
 /* final_footer */
 
 .final_footer{
-    border: solid 1px white;
         background-color: white;
         width: 360px;
-        height: 70px;
-        margin-top: 40px;
         position: relative;
+        margin: auto;
+        padding-bottom: 10px;
+}
+
+.footer_f{
+    margin-top: 100px;
 }
 
 .continue2{
@@ -497,9 +529,3 @@ body {
     margin-right: 12px;
     margin-top: 11px;
 }
-
-
-
-
-
-
