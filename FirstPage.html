@@ -78,9 +78,9 @@
 
             </div>
             <div class="btn_div">
-                <button onclick="decrease1()" class="min_btn"><img src="logo/Vectormin.png"></button>
+                <button onclick="decrease1()" onmousedown="MyInterval_dec1()" onmouseup="stopMyInterval_dec1()" class="min_btn"><img src="logo/Vectormin.png"></button>
                 <div id="inc" class="count_rec">1</div>
-                <button onclick="increase()" class="max_btn"><img src="logo/Vectorpl.png" alt=""></button>
+                <button onclick="increase1()" onmousedown="myinterval1()" onmouseup="stopMyInterval1()" class="max_btn"><img src="logo/Vectorpl.png" alt=""></button>
                 <button onclick="dlt()" class="del_btn"><img src="logo/Vectorrb.png" alt=""></button>
             </div>
             <div class="save_div">
@@ -107,9 +107,9 @@
                 </div>
             </div>
             <div class="btn_div2">
-                <button class="min_btn" onclick="decrease2()"><img src="logo/Vectormin.png"></button>
+                <button class="min_btn" onclick="decrease2()" onmousedown="MyInterval_dec2()" onmouseup="stopMyInterval_dec2()"><img src="logo/Vectormin.png"></button>
                 <div id="inc2" class="count_rec">1</div>
-                <button onclick="increase2()" class="max_btn"><img src="logo/Vectorpl.png" alt=""></button>
+                <button onmousedown="myinterval2()" onmouseup="stopMyInterval2()" onclick="increase2()" class="max_btn"><img src="logo/Vectorpl.png" alt=""></button>
                 <button onclick="dlt2()" class="del_btn"><img src="logo/Vectorrb.png" alt=""></button>
             </div>
             <div class="save_div">
@@ -180,9 +180,9 @@
                     </div>
                 </div>
                 <div class="btn_div">
-                    <button class="min_btn" onclick="decrease3()"><img src="logo/Vectormin.png"></button>
+                    <button class="min_btn" onclick="decrease3()" onmousedown="MyInterval_dec3()" onmouseup="stopMyInterval_dec3()"><img src="logo/Vectormin.png"></button>
                     <div id="inc3" class="count_rec">1</div>
-                    <button onclick="increase3()" class="max_btn"><img src="logo/Vectorpl.png" alt=""></button>
+                    <button  onmouseup="stopMyInterval3()" onmousedown="myinterval3()" onclick="increase3()" class="max_btn"><img src="logo/Vectorpl.png" alt=""></button>
                     <button onclick="dlt3()" class="del_btn"><img src="logo/Vectorrb.png" alt=""></button>
                 </div>
                 <div class="save_div">
