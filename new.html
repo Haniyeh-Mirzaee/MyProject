@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
     <link rel="stylesheet" href="FirstPageStyle.css">
-    <script src="FirstPageJS.js"></script>
+    <script src="new.js"></script>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
             <img class="arrow_logo" src="logo/Vector.png" alt="">
             <button class="sale_btn">فروش در باسلام</button>
             <img class="basket_logo" src="logo/VectorS.png" alt="">
-            <div id="sumcircle" class="circle">3</div>
+            <div id="sumcircle" class="circle"></div>
         </div>
         <input type="search" class="search_input" placeholder="جست و جو در صدها هزار محصول خانگی و محلی ...">
         <img class="search_logo" src="logo/VectorM.png" alt="">
@@ -59,9 +59,48 @@
         </div>
 
 
-        <!-- product 1 -->
+        <!-- template  -->
 
-        <div class="product" id="pro_del1">
+        <div class="x">
+            <template>
+
+                <!-- product -->
+                <div class="product" id="pro_del1">
+                    <div class="product_div">
+                        <img src="" alt="">
+                        <div class="pro_detail">
+                            <div class="pro_name"></div>
+                            <div class="price_div">
+                                <div class="pro_price"> <del></del> </div>
+                                <div class="pro_price2"></div>
+                                <b>
+                                    <div class="price_text"></div>
+                                </b>
+                                <img class="n" src="logo/۲۳ هزار تومان.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="btn_div">
+                        <button class="min_btn"><img src="logo/Vectormin.png"></button>
+                        <input type="text" value="3" readonly class="inp">
+                        <button class="max_btn">
+                            <img src="logo/Vectorpl.png" alt="">
+                        </button>
+                        <button class="del_btn"><img src="logo/Vectorrb.png" alt=""></button>
+                    </div>
+                    <div class="save_div">
+                        <div class="save_p">ذخیره در لیست خرید بعدی</div>
+                        <hr class="hr3">
+                    </div>
+                    <hr class="hr4">
+                </div>
+
+            </template>
+        </div>
+
+        <!-- product 1 -->
+        <!-- <div class="product" id="pro_del1">
             <div class="product_div">
                 <img class="pro_img" src="logo/image 1.png" alt="">
                 <div class="pro_detail">
@@ -72,7 +111,7 @@
                         <b>
                             <div class="price_text">تومان</div>
                         </b>
-                        <!-- <img class="n" src="logo/۲۳ هزار تومان.png" alt=""> -->
+                        <img class="n" src="logo/۲۳ هزار تومان.png" alt="">
                     </div>
                 </div>
 
@@ -81,8 +120,7 @@
                 <button onclick="decrease1()" onmousedown="DIncreaseSpeed(2000)" onmouseup="DDecreaseSpeed()"
                     class="min_btn"><img src="logo/Vectormin.png"></button>
                 <div id="inc" class="count_rec">1</div>
-                <button onmousedown="IncreaseSpeed(500)" onmouseup="DecreaseSpeed()" onclick="increase1()"
-                    class="max_btn">
+                <button onmousedown="IncreaseSpeed(2000)" onmouseup="DecreaseSpeed()" onclick="increase1()" class="max_btn">
                     <img src="logo/Vectorpl.png" alt="">
                 </button>
                 <button onclick="dlt()" class="del_btn"><img src="logo/Vectorrb.png" alt=""></button>
@@ -92,10 +130,10 @@
                 <hr class="hr3">
             </div>
             <hr class="hr4">
-        </div>
+        </div> -->
 
         <!-- product 2 -->
-        <div class="product" id="pro_del2">
+        <!-- <div class="product" id="pro_del2">
             <div class="product_div">
                 <img class="pro_img2" src="logo/image 2.png" alt="">
                 <div class="pro_detail">
@@ -106,8 +144,7 @@
                         <b>
                             <div class="price_text">تومان</div>
                         </b>
-                        <!-- <img class="n" src="logo/۲۳ هزار تومان.png" alt=""> -->
-                    </div>
+/                    </div>
                 </div>
             </div>
             <div class="btn_div2">
@@ -123,7 +160,7 @@
                 <hr class="hr3">
             </div>
             <hr class="hr4">
-        </div>
+        </div> -->
 
 
         <!--footer-->
@@ -137,7 +174,7 @@
                 <button class="continue">ادامه خرید فقط از این غرفه</button>
                 <div class="sum_div">
                     <div class="sum_price">جمع مبلغ برای ۲ کالا
-                        <div class="productprice">۷۵,۰۰۰ تومان 
+                        <div class="productprice">
                             <!-- <img class="n3" src="logo/۲۳ هزار تومان.png" alt=""> -->
                         </div>
                     </div>
@@ -170,7 +207,6 @@
             </div>
 
             <!--product 3 -->
-
             <div class="product" id="pro_del3">
                 <div class="product_div">
                     <img class="pro_img" src="logo/image 1.png" alt="">
@@ -182,17 +218,15 @@
                             <b>
                                 <div class="price_text">تومان</div>
                             </b>
-                            <!-- <img class="n4" src="logo/۲۳ هزار تومان.png" alt=""> -->
+                            <img class="n4" src="logo/۲۳ هزار تومان.png" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="btn_div">
-                    <button class="min_btn" onclick="decrease3()" onmousedown="MyInterval_dec3()"
-                        onmouseup="stopMyInterval_dec3()"><img src="logo/Vectormin.png"></button>
-                    <div id="inc3" class="count_rec">1</div>
-                    <button onmousedown="myinterval3()" onmouseup="stopMyInterval3()" onclick="increase3()"
-                        class="max_btn"><img src="logo/Vectorpl.png" alt=""></button>
-                    <button onclick="dlt3()" class="del_btn"><img src="logo/Vectorrb.png" alt=""></button>
+                    <button class="min_btn"><img src="logo/Vectormin.png"></button>
+                    <input type="text" value="3" readonly class="inp">
+                    <button class="max_btn"><img src="logo/Vectorpl.png" alt=""></button>
+                    <button class="del_btn"><img src="logo/Vectorrb.png" alt=""></button>
                 </div>
                 <div class="save_div">
                     <div class="save_p">ذخیره در لیست خرید بعدی</div>

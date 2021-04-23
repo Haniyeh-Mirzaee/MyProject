@@ -62,19 +62,30 @@ function increase1() {
     document.getElementById("inc").innerHTML = pls1.toString();
 
     ++sum1;
-    sum = sum1 + sum2 + sum3 ;
-    document.getElementById("sumcircle").innerHTML=sum.toString();
+    sum = sum1 + sum2 + sum3;
+    document.getElementById("sumcircle").innerHTML = sum.toString();
 }
 
-var myvar1;
-function myinterval1(){
- myvar1= setInterval(increase1,200);
-}
-function stopMyInterval1(){
-    clearInterval(myvar1);
+let myvar1;
+
+function IncreaseSpeed(duration) {
+    myvar1 = setTimeout(() => {
+
+        pls1 += 1;
+        document.getElementById("inc").innerHTML = pls1;
+
+        ++sum1;
+        sum = sum1 + sum2 + sum3;
+        document.getElementById("sumcircle").innerHTML = sum.toString();
+
+        IncreaseSpeed(duration - 50);
+
+    }, duration)
 }
 
-
+function DecreaseSpeed() {
+    clearTimeout(myvar1);
+}
 
 var pls2 = 1;
 
@@ -87,11 +98,12 @@ function increase2() {
     document.getElementById("sumcircle").innerHTML = sum.toString();
 }
 
+
 var myvar2;
-function myinterval2(){
- myvar2= setInterval(increase2,200);
+function myinterval2() {
+    myvar2 = setInterval(increase2, 200);
 }
-function stopMyInterval2(){
+function stopMyInterval2() {
     clearInterval(myvar2);
 }
 
@@ -108,10 +120,10 @@ function increase3() {
 }
 
 var myvar3;
-function myinterval3(){
- myvar3= setInterval(increase3,200);
+function myinterval3() {
+    myvar3 = setInterval(increase3, 200);
 }
-function stopMyInterval3(){
+function stopMyInterval3() {
     clearInterval(myvar3);
 }
 
@@ -129,12 +141,28 @@ function decrease1() {
     }
 }
 
-var Dmyvar1;
-function MyInterval_dec1(){
-    Dmyvar1= setInterval(decrease1,200);
+let Dmyvar1;
+
+function DIncreaseSpeed(duration) {
+    Dmyvar1 = setTimeout(() => {
+
+        if (pls1 > 1) {
+
+            pls1 -= 1;
+            document.getElementById("inc").innerHTML = pls1;
+
+            --sum1;
+            sum = sum1 + sum2 + sum3;
+            document.getElementById("sumcircle").innerHTML = sum.toString();
+        }
+
+        DIncreaseSpeed(duration - 500);
+
+    }, duration)
 }
-function stopMyInterval_dec1(){
-    clearInterval(Dmyvar1);
+
+function DDecreaseSpeed() {
+    clearTimeout(Dmyvar1);
 }
 
 
@@ -150,10 +178,10 @@ function decrease2() {
 }
 
 var Dmyvar2;
-function MyInterval_dec2(){
-    Dmyvar2= setInterval(decrease2,200);
+function MyInterval_dec2() {
+    Dmyvar2 = setInterval(decrease2, 200);
 }
-function stopMyInterval_dec2(){
+function stopMyInterval_dec2() {
     clearInterval(Dmyvar2);
 }
 
@@ -169,9 +197,26 @@ function decrease3() {
 }
 
 var Dmyvar3;
-function MyInterval_dec3(){
-    Dmyvar3= setInterval(decrease3,200);
+function MyInterval_dec3() {
+    Dmyvar3 = setInterval(decrease3, 200);
 }
-function stopMyInterval_dec3(){
+function stopMyInterval_dec3() {
     clearInterval(Dmyvar3);
+}
+
+
+// change titr's color
+
+function BasketFunc() {
+    document.getElementsByClassName('BasketTitr')[0].style.color = '#DF3856';
+    document.getElementsByClassName('hr1')[0].style.borderBottomColor = '#DF3856';
+    document.getElementsByClassName('NextShopTitr')[0].style.color = '#000000';
+    document.getElementsByClassName('hr2')[0].style.borderBottomColor = '#DFDFDF';
+}
+
+function NextShopFunc() {
+    document.getElementsByClassName('NextShopTitr')[0].style.color = '#DF3856';
+    document.getElementsByClassName('hr2')[0].style.borderBottomColor = '#DF3856';
+    document.getElementsByClassName('BasketTitr')[0].style.color = '#000000';
+    document.getElementsByClassName('hr1')[0].style.borderBottomColor = '#DFDFDF';
 }
